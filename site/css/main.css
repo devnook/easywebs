@@ -1,0 +1,99 @@
+/*
+
+Your styles go here!
+
+Hint! You'll probably want to start by styling:
+  * <body>
+  * <article>
+  * <h1>
+  * <img>
+
+I've left some boilerplate below for you.
+
+*/
+
+body {
+  font-family: Roboto;
+  margin: 0;
+}
+
+header {
+  width: 100%;
+  height: 164px;
+  position: sticky;
+  top: 0;
+  background: white;
+}
+
+.webs-logo {
+  height: 100px;
+  vertical-align: middle;
+}
+
+header > h1 {
+  max-width: 900px;
+  margin: auto;
+  font-weight: normal;
+  padding: 32px 0;
+}
+
+.webs-hero {
+  background: url('../images/happydog.jpg') center/cover;
+  height: 500px;
+  width: 100%;
+}
+
+
+.webs-hero-shadow {
+  background: url('../images/aztek.jpg') repeat-x;
+  height: 24px;
+  width: 100%;
+}
+
+.webs-hero-shadow.sticky {
+  position: sticky;
+  top: 164px;
+}
+
+.webs-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.webs-content {
+  max-width: 900px;
+  overflow: hidden;
+}
+
+article {
+  margin: 50px 0;
+}
+
+footer {
+  width: 100%;
+  height: 164px;
+  background: #ddd;
+  color: white;
+}
+
+.webs-footer-content {
+  max-width: 900px;
+  margin: auto;
+  font-weight: normal;
+}
+
+footer ul {
+  list-style: none;
+  padding: 32px auto;
+}
+
+footer li {
+  padding: 12px;
+}
+
+footer a {
+  color: inherit;
+  text-decoration: none;
+}

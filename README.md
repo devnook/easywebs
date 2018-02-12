@@ -1,0 +1,1 @@
+## EasyWebs project stub
