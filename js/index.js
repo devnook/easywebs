@@ -1,7 +1,7 @@
 function resizeHeaderOnScroll() {
   const distanceY = window.pageYOffset || document.documentElement.scrollTop;
-  const stickyOn = 500;
-  const headerEl = document.getElementById('hero-shadow');
+  const stickyOn = 400;
+  const headerEl = document.getElementById('header');
   headerEl.classList.toggle('sticky', distanceY > stickyOn);
 }
 

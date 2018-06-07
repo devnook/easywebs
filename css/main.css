@@ -1,99 +1,191 @@
-/*
-
-Your styles go here!
-
-Hint! You'll probably want to start by styling:
-  * <body>
-  * <article>
-  * <h1>
-  * <img>
-
-I've left some boilerplate below for you.
-
-*/
-
 body {
   font-family: Roboto;
   margin: 0;
+  font-weight: 100;
+
+  --grey-bg-color:#eee;
+  --max-body-width: 1024px;
+  --cards-section-height: 140px;
+}
+
+/* Reset */
+* {
+  box-sizing: border-box;
+}
+
+ul {
+  margin: 0;
+}
+
+h1, h2, h3 {
+  font-weight: 100;
+}
+
+/* Layout */
+
+.container {
+  margin: auto;
+  max-width: var(--max-body-width);
+  padding: 0 1em;
 }
 
 header {
-  width: 100%;
-  height: 164px;
-  position: sticky;
+  background-color:rgba(0, 0, 0, 0.5);
+  color: #fff;
+  line-height: 48px;
+  position: fixed;
   top: 0;
-  background: white;
-}
-
-.webs-logo {
-  height: 100px;
-  vertical-align: middle;
-}
-
-header > h1 {
-  max-width: 900px;
-  margin: auto;
-  font-weight: normal;
-  padding: 32px 0;
-}
-
-.webs-hero {
-  background: url('../images/happydog.jpg') center/cover;
-  height: 500px;
   width: 100%;
+  font-size: 1em;
 }
 
+header.sticky {
+  background-color: #000;
 
-.webs-hero-shadow {
-  background: url('../images/aztek.jpg') repeat-x;
-  height: 24px;
-  width: 100%;
 }
 
-.webs-hero-shadow.sticky {
-  position: sticky;
-  top: 164px;
-}
-
-.webs-body {
+header > .container {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
+  justify-content: space-between;
 }
 
-.webs-content {
-  max-width: 900px;
-  overflow: hidden;
+header .logo {
+  vertical-align: middle;
+  margin: auto .5rem;
+}
+
+nav {
+  font-size: 1.2rem;
+}
+
+nav > * {
+  margin: auto .5rem;
+}
+
+.hero {
+  height: 40vh;
+  background-image: url('/images/originals/joshua-sortino-5581-unsplash.jpg');
+  background-size: cover;
+  background-position: 50% 50%;
+  font-weight: 100;
+  color: #fff;
+  padding-top: 15vh;
+  padding-bottom: 10vh;
+}
+
+.hero h1 {
+  margin-top: 0;
 }
 
 article {
-  margin: 50px 0;
+  display: flex;
+  margin: 2rem auto;
+  align-items: center;
+}
+
+article h1 {
+  font-size: 1.6em;
+  margin: 0;
+}
+
+article p {
+  margin-top: .5em;
+}
+
+.thumb {
+  margin-right: 1rem;
 }
 
 footer {
+  padding: 2rem 0;
+}
+
+.carousel {
+  text-align: center;
+  padding: 2em;
+  border: 1px solid;
+}
+
+.cards-bottom {
+  padding: 1rem 0 3rem 0;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.2rem;
+}
+
+.section-dark {
+  background-color: var(--grey-bg-color);
+}
+
+/* Cards */
+
+.cards {
+  height: var(--cards-section-height);
   width: 100%;
-  height: 164px;
-  background: #ddd;
-  color: white;
 }
 
-.webs-footer-content {
-  max-width: 900px;
-  margin: auto;
-  font-weight: normal;
+.cards-grid {
+  display: grid;
+  grid-template-columns: 23% 23% 23% 23%;
+  grid-column-gap: 2%;
+  width: 100%;
+  
 }
 
-footer ul {
-  list-style: none;
-  padding: 32px auto;
+.card {
+  display: flex;
+  height: 200px;
+  flex-direction: column;
+  
 }
 
-footer li {
-  padding: 12px;
+.card-up {
+  margin-top: -100px;
 }
 
-footer a {
-  color: inherit;
-  text-decoration: none;
+.card img {
+  height: 150px;
+}
+
+.card-title {
+  height: 3rem;
+  background-color: #fff;
+  padding: 1rem;
+
+}
+
+/* Media queries */
+
+@media (max-width: 800px) { 
+  .card-title {
+    padding: .5rem;
+  }
+
+  .card img {
+    height: 100px;
+  }
+
+  .cards {
+    height: 120px;
+  }
+
+  .card-up {
+    margin-top: -50px;
+  }
+}
+
+@media (max-width: 400px) { 
+  .thumb {
+    width: 100%;
+    height: auto;
+  }
+
+  article {
+    flex-direction: column;
+  }
 }
