@@ -64,7 +64,7 @@ nav > * {
 
 .hero {
   height: 40vh;
-  background-image: url('images/originals/joshua-sortino-5581-unsplash.jpg');
+  background-image: url('../images/originals/joshua-sortino-5581-unsplash.jpg');
   background-size: cover;
   background-position: 50% 50%;
   font-weight: 100;
