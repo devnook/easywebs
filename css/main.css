@@ -30,7 +30,7 @@ h1, h2, h3 {
 }
 
 header {
-  background-color:rgba(0, 0, 0, 0.5);
+  background-color: #000;
   color: #fff;
   line-height: 48px;
   position: fixed;
@@ -118,6 +118,11 @@ h2 {
   font-size: 1.2rem;
 }
 
+.section-pattern {
+  background-image: url('../images/banner.jpg');
+  background-size: 50%;
+}
+
 .section-dark {
   background-color: var(--grey-bg-color);
 }
@@ -134,14 +139,14 @@ h2 {
   grid-template-columns: 23% 23% 23% 23%;
   grid-column-gap: 2%;
   width: 100%;
-  
+
 }
 
 .card {
   display: flex;
   height: 200px;
   flex-direction: column;
-  
+
 }
 
 .card-up {
@@ -154,14 +159,15 @@ h2 {
 
 .card-title {
   height: 3rem;
-  background-color: #fff;
+  background-color: #676c71;
   padding: 1rem;
+  color: #fff;
 
 }
 
 /* Media queries */
 
-@media (max-width: 800px) { 
+@media (max-width: 800px) {
   .card-title {
     padding: .5rem;
   }
@@ -179,7 +185,7 @@ h2 {
   }
 }
 
-@media (max-width: 400px) { 
+@media (max-width: 400px) {
   .thumb {
     width: 100%;
     height: auto;
