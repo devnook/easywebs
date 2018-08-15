@@ -1,11 +1,22 @@
 {
-  "name": "friendlywebs",
+  "name": "easywebs",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lh": "lighthouse-ci"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/devnook/easywebs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/devnook/easywebs/issues"
+  },
+  "homepage": "https://github.com/devnook/easywebs#readme",
+  "description": "",
+  "devDependencies": {
+    "lighthouse-ci": "git+https://github.com/ebidel/lighthouse-ci.git"
+  }
 }
